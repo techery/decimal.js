@@ -4993,7 +4993,10 @@
 
   // Node and other environments that support module.exports.
   } else if (typeof module != 'undefined' && module.exports) {
-    module.exports = Decimal;
+    module.exports = {
+      __esModule: true,
+      'default': Decimal
+    };
 
     if (!cryptoObject) {
       try {
