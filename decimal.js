@@ -4998,14 +4998,6 @@
       'default': Decimal
     };
 
-    if (!cryptoObject) {
-      try {
-        cryptoObject = require('cry' + 'pto');
-      } catch (e) {
-        // Ignore.
-      }
-    }
-
   // Browser.
   } else {
     if (!globalScope) {
